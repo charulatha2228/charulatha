@@ -1,0 +1,8 @@
+a = float(input("enter the 1st side:"))
+b = float(input("enter the 2nd side:"))
+c = float(input("enter the 3rd side:"))
+if a+b >c and a+c>b and b+c>a:
+    print("the triangle is valid")
+else:
+    print("the triangle is not valid ")
+

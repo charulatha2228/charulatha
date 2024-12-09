@@ -1,0 +1,2 @@
+num = float(input("enter a number:"))
+print(f" the square of the number is:{num**2}")
