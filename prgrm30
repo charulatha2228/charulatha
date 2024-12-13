@@ -1,0 +1,22 @@
+# Function to check if a number is prime
+def is_prime(num):
+    if num <= 1:
+        return False  # Numbers less than or equal to 1 are not prime
+    for i in range(2, int(num ** 0.5) + 1):  # Check divisibility up to the square root of the number
+        if num % i == 0:
+            return False  # If divisible, it's not a prime number
+    return True
+
+# Function to print prime numbers between two intervals
+def print_primes_in_range(start, end):
+    print(f"Prime numbers between {start} and {end}:")
+    for num in range(start, end + 1):
+        if is_prime(num):
+            print(num, end=" ")
+
+# Input from user for the range
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+
+# Print prime numbers between the given range
+print_primes_in_range(start, end)

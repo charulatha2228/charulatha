@@ -1,0 +1,25 @@
+# Function to check if the number is a palindrome
+def is_palindrome(n):
+    original_number = n
+    reversed_number = 0
+
+    # Reverse the number
+    while n > 0:
+        digit = n % 10
+        reversed_number = reversed_number * 10 + digit
+        n = n // 10
+
+    # Check if the reversed number is equal to the original number
+    if original_number == reversed_number:
+        return True
+    else:
+        return False
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Check if the number is a palindrome
+if is_palindrome(num):
+    print(f"{num} is a palindrome.")
+else:
+    print(f"{num} is not a palindrome.")

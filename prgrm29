@@ -1,0 +1,27 @@
+# Function to find the largest and smallest digits in a number
+def find_largest_smallest_digit(n):
+    # Initialize largest and smallest digits
+    largest_digit = -1
+    smallest_digit = 10  # Since digits are between 0 and 9
+
+    # Loop through each digit of the number
+    while n > 0:
+        digit = n % 10  # Extract the last digit
+        # Update largest and smallest digits
+        if digit > largest_digit:
+            largest_digit = digit
+        if digit < smallest_digit:
+            smallest_digit = digit
+        n = n // 10  # Remove the last digit
+
+    return largest_digit, smallest_digit
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Find largest and smallest digits
+largest, smallest = find_largest_smallest_digit(num)
+
+# Print the results
+print(f"The largest digit in {num} is {largest}.")
+print(f"The smallest digit in {num} is {smallest}.")

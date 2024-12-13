@@ -1,0 +1,16 @@
+# Function to calculate the sum of digits
+def sum_of_digits(n):
+    digit_sum = 0
+    while n > 0:
+        digit = n % 10  # Get the last digit
+        digit_sum += digit  # Add the digit to the sum
+        n = n // 10  # Remove the last digit
+    return digit_sum
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Calculate and print the sum of digits
+sum_digits = sum_of_digits(num)
+print(f"The sum of the digits of {num} is {sum_digits}.")
+

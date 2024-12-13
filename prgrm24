@@ -1,0 +1,18 @@
+# Function to calculate factorial
+def factorial(n):
+    # Base case: if n is 0 or 1, factorial is 1
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Check if the number is negative, zero, or positive
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    # Call the factorial function and print the result
+    result = factorial(num)
+    print(f"The factorial of {num} is {result}")

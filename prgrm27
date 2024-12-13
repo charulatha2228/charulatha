@@ -1,0 +1,19 @@
+# Function to count digits in a number
+def count_digits(n):
+    # Handle the case for zero
+    if n == 0:
+        return 1
+
+    # Count the digits
+    digit_count = 0
+    while n > 0:
+        n = n // 10  # Remove the last digit
+        digit_count += 1  # Increase the count for each digit
+    return digit_count
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Count and print the number of digits
+digits = count_digits(num)
+print(f"The number {num} has {digits} digit(s).")

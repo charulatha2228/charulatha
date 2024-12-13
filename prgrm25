@@ -1,0 +1,15 @@
+# Function to reverse the number
+def reverse_number(n):
+    reversed_num = 0
+    while n > 0:
+        digit = n % 10  # Extract the last digit
+        reversed_num = reversed_num * 10 + digit  # Append the digit to reversed_num
+        n = n // 10  # Remove the last digit from n
+    return reversed_num
+
+# Input from user
+num = int(input("Enter a number: "))
+
+# Call the reverse_number function and print the result
+reversed_num = reverse_number(num)
+print(f"The reversed number is {reversed_num}")
