@@ -1,0 +1,4 @@
+def count_occurrences(lst,element):
+    return lst.count(element)
+numbers = [10,20,10,50,10]
+print("occurrences of 10:",count_occurrences(numbers,10))

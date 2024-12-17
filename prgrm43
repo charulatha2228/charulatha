@@ -1,0 +1,4 @@
+def calculate_sum(lst):
+    return sum(lst)
+numbers = [10,20,5,50,30]
+print("sum of elements:",calculate_sum(numbers))

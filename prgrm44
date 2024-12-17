@@ -1,0 +1,4 @@
+def calculate_average(lst):
+    return sum(lst)/len(lst)
+numbers = [10,20,5,50,30]
+print("average:",calculate_average(numbers))

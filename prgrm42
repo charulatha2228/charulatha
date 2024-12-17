@@ -1,0 +1,4 @@
+def find_smallest(lst):
+    return min(lst)
+numbers =[10,20,5,50,30]
+print("smallest numbers:",find_smallest(numbers))

@@ -1,0 +1,5 @@
+string = input("enter the orginal string:")
+find_str = input("enter the substring to find:")
+replace_str = input("enter the substring to replace with:")
+new_string = string.replace(find_str, replace_str)
+print(f" updated string:{new_string}")

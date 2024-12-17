@@ -1,0 +1,16 @@
+import keyword
+
+def is_valid_identifier(s):
+    # Check if the string is a valid identifier and not a keyword
+    if s.isidentifier() and not keyword.iskeyword(s):
+        return True
+    return False
+
+# Take user input
+input_string = input("Enter a string: ")
+
+# Check if the string is a valid Python identifier
+if is_valid_identifier(input_string):
+    print(f"'{input_string}' is a valid Python identifier.")
+else:
+    print(f"'{input_string}' is not a valid Python identifier.")

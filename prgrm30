@@ -1,8 +1,7 @@
-# Function to check if a number is prime
 def is_prime(num):
     if num <= 1:
-        return False  # Numbers less than or equal to 1 are not prime
-    for i in range(2, int(num ** 0.5) + 1):  # Check divisibility up to the square root of the number
+        return False  
+    for i in range(2, int(num ** 0.5) + 1):  
         if num % i == 0:
             return False  # If divisible, it's not a prime number
     return True

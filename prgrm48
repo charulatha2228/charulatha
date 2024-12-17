@@ -1,0 +1,4 @@
+def element_exists(lst,element):
+    return element in lst
+numbers =[10,20,30,40,50]
+print("does 20 exists ?:",element_exists(numbers,20))

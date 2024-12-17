@@ -1,0 +1,12 @@
+def remove_spaces(s):
+    # Remove spaces from the string
+    return s.replace(" ", "")
+
+# Take user input
+input_string = input("Enter a string: ")
+
+# Remove spaces from the string
+result_string = remove_spaces(input_string)
+
+# Output the result
+print(f"String without spaces: {result_string}")

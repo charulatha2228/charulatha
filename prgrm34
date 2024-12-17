@@ -1,0 +1,10 @@
+from collections import Counter
+
+def character_frequency(s):
+    
+    frequency = Counter(s)
+    return frequency
+input_string = input("Enter a string: ")
+frequency = character_frequency(input_string)
+for char, count in frequency.items():
+    print(f"Character: '{char}' appears {count} time(s).")

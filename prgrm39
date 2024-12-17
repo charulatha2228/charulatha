@@ -1,0 +1,15 @@
+def count_words(s):
+    # Split the string into words using split()
+    words = s.split()
+    
+    # Return the number of words
+    return len(words)
+
+# Take user input
+input_string = input("Enter a string: ")
+
+# Count the number of words
+word_count = count_words(input_string)
+
+# Output the result
+print(f"The number of words in the string is: {word_count}")

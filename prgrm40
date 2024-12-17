@@ -1,0 +1,12 @@
+def join_strings(str_list):
+    # Join the list of strings into a single string with a space as a separator
+    return " ".join(str_list)
+
+# Example list of strings
+string_list = ["Hello", "world,", "this", "is", "a", "test."]
+
+# Join the list of strings
+result_string = join_strings(string_list)
+
+# Output the result
+print(f"Joined string: {result_string}")
