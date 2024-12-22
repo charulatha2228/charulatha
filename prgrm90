@@ -1,0 +1,59 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to handle the "New" option under the "File" menu
+def new_file():
+    messagebox.showinfo("New File", "New file created!")
+
+# Function to handle the "Open" option under the "File" menu
+def open_file():
+    messagebox.showinfo("Open File", "File opened!")
+
+# Function to handle the "Exit" option under the "File" menu
+def exit_app():
+    root.quit()
+
+# Function to handle the "Copy" option under the "Edit" menu
+def copy():
+    messagebox.showinfo("Copy", "Text copied!")
+
+# Function to handle the "Paste" option under the "Edit" menu
+def paste():
+    messagebox.showinfo("Paste", "Text pasted!")
+
+# Function to handle the "About" option under the "Help" menu
+def about():
+    messagebox.showinfo("About", "This is a simple GUI with a menu bar using tkinter.")
+
+# Create the main window
+root = tk.Tk()
+root.title("Menu Bar Example")
+root.geometry("400x300")  # Set the window size
+
+# Create a menu bar
+menu_bar = tk.Menu(root)
+
+# Create the "File" menu and add options
+file_menu = tk.Menu(menu_bar, tearoff=0)
+file_menu.add_command(label="New", command=new_file)
+file_menu.add_command(label="Open", command=open_file)
+file_menu.add_separator()
+file_menu.add_command(label="Exit", command=exit_app)
+menu_bar.add_cascade(label="File", menu=file_menu)
+
+# Create the "Edit" menu and add options
+edit_menu = tk.Menu(menu_bar, tearoff=0)
+edit_menu.add_command(label="Copy", command=copy)
+edit_menu.add_command(label="Paste", command=paste)
+menu_bar.add_cascade(label="Edit", menu=edit_menu)
+
+# Create the "Help" menu and add options
+help_menu = tk.Menu(menu_bar, tearoff=0)
+help_menu.add_command(label="About", command=about)
+menu_bar.add_cascade(label="Help", menu=help_menu)
+
+# Configure the main window to use the menu bar
+root.config(menu=menu_bar)
+
+# Start the main loop
+root.mainloop()

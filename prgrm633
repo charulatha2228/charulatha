@@ -1,0 +1,9 @@
+# Create a dictionary
+my_dict = {"a": 10, "b": 25, "c": 15, "d": 40}
+
+# Find the key with the maximum value
+key_with_max_value = max(my_dict, key=my_dict.get)
+
+# Print the result
+print("Key with the maximum value:", key_with_max_value)
+print("Maximum value:", my_dict[key_with_max_value])

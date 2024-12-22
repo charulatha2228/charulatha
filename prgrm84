@@ -1,0 +1,19 @@
+import numpy as np
+
+# Create a 2D array (3x3 for this example)
+array_2d = np.array([[1, 2, 3], 
+                     [4, 5, 6], 
+                     [7, 8, 9]])
+
+# Calculate the sum of each row
+row_sum = np.sum(array_2d, axis=1)
+
+# Calculate the sum of each column
+column_sum = np.sum(array_2d, axis=0)
+
+# Print the 2D array, row sums, and column sums
+print("2D Array:")
+print(array_2d)
+
+print("\nSum of each row:", row_sum)
+print("Sum of each column:", column_sum)

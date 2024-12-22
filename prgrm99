@@ -1,0 +1,23 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample data
+data = {
+    'Year': [2019, 2020, 2021, 2022, 2023],
+    'Sales': [120, 150, 170, 200, 250]
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Plot a Line Graph (default)
+df.plot(x='Year', y='Sales', kind='line', marker='o', color='blue', title="Sales Over Years")
+
+# Show the plot
+plt.show()
+
+# Plot a Bar Chart
+df.plot(x='Year', y='Sales', kind='bar', color='green', title="Sales Over Years")
+
+# Show the plot
+plt.show()

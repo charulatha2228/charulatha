@@ -1,0 +1,10 @@
+# Create a dictionary
+my_dict = {"name": "Alice", "age": 25, "city": "New York", "profession": "Engineer"}
+
+# Convert dictionary into two lists: keys and values
+keys_list = list(my_dict.keys())
+values_list = list(my_dict.values())
+
+# Print the lists
+print("Keys list:", keys_list)
+print("Values list:", values_list)

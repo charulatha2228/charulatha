@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+# Data: Percentage distribution of grades
+grades = ['A', 'B', 'C', 'D']
+percentage = [35, 25, 30, 10]  # Percentage for each grade
+
+# Create a pie chart
+plt.pie(percentage, labels=grades, autopct='%1.1f%%', startangle=140, colors=['green', 'blue', 'orange', 'red'])
+
+# Add title
+plt.title("Percentage Distribution of Grades in a Class")
+
+# Display the pie chart
+plt.show()
+
+

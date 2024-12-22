@@ -1,0 +1,31 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to display the selected item from the listbox
+def show_selected_item():
+    selected_item = listbox.get(tk.ACTIVE)  # Get the active (selected) item
+    messagebox.showinfo("Selected Item", f"You selected: {selected_item}")
+
+# Create the main window
+root = tk.Tk()
+root.title("Listbox Example")
+root.geometry("400x300")  # Set the window size
+
+# Create a label
+label = tk.Label(root, text="Select an item from the list", font=("Arial", 14))
+label.pack(pady=20)
+
+# Create a Listbox widget
+items = ["Apple", "Banana", "Cherry", "Grapes", "Orange", "Pineapple", "Mango"]
+listbox = tk.Listbox(root, font=("Arial", 12), height=6)
+for item in items:
+    listbox.insert(tk.END, item)  # Add items to the listbox
+
+listbox.pack(pady=10)
+
+# Create a button to show the selected item
+select_button = tk.Button(root, text="Show Selected Item", font=("Arial", 12), command=show_selected_item)
+select_button.pack(pady=10)
+
+# Start the main loop
+root.mainloop()

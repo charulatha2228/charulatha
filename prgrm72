@@ -1,0 +1,10 @@
+# Define the function to calculate the square
+def calculate_square(number):
+    return number ** 2
+
+# Call the function with a number
+num = 5
+square = calculate_square(num)
+
+# Print the result
+print(f"The square of {num} is {square}")

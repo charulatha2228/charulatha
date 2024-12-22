@@ -1,0 +1,15 @@
+import numpy as np
+
+# Define the coefficient matrix A
+A = np.array([[2, 3, 1],
+              [4, 1, 2],
+              [3, 2, 3]])
+
+# Define the constant matrix b
+b = np.array([1, 2, 3])
+
+# Use numpy.linalg.solve() to solve the system of equations
+solution = np.linalg.solve(A, b)
+
+# Print the solution
+print("Solution for [x, y, z]:", solution)

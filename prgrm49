@@ -1,5 +1,7 @@
 def second_largest(lst):
-    sorted_lst = sorted(set(lst),reverse = true)
-    return sorted_lst[1]
+    sorted_list= sorted(set(lst),reverse = true)
+    return sorted_lst[1] if len(sorted_list)>1 else None
     numbers = [10,20,30,50,40]
 print("second largest number:",second_largest(numbers))
+
+

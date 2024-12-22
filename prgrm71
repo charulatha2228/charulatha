@@ -1,0 +1,6 @@
+# Define the function
+def print_hello():
+    print("hello")
+
+# Call the function
+print_hello()

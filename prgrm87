@@ -1,0 +1,20 @@
+import tkinter as tk
+
+# Function to display "Hello, World!" when the button is clicked
+def display_message():
+    label.config(text="Hello, World!")
+
+# Create the main window
+root = tk.Tk()
+root.title("Hello World GUI")
+
+# Create a label to display the message
+label = tk.Label(root, text="", font=("Arial", 16))
+label.pack(pady=20)
+
+# Create a button that will call the display_message function when clicked
+button = tk.Button(root, text="Click Me", font=("Arial", 14), command=display_message)
+button.pack(pady=10)
+
+# Start the GUI event loop
+root.mainloop()

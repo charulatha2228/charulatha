@@ -1,0 +1,15 @@
+# Create a list
+my_list = ["apple", "banana", "apple", "orange", "banana", "banana"]
+
+# Create an empty dictionary to store the frequency
+frequency_dict = {}
+
+# Iterate through the list and count the frequency of each element
+for item in my_list:
+    if item in frequency_dict:
+        frequency_dict[item] += 1
+    else:
+        frequency_dict[item] = 1
+
+# Print the frequency dictionary
+print("Frequency of elements:", frequency_dict)

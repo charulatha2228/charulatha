@@ -1,0 +1,12 @@
+# Define a tuple
+my_tuple = (10, 20, 30, 40, 50, 60, 70, 80)
+
+# Start slicing
+# Syntax: tuple[start:end:step]
+
+# Example 1: Slice from index 2 to 5 (end is exclusive)
+slice_1 = my_tuple[2:6]
+print("Slice from index 2 to 5:", slice_1)
+
+
+

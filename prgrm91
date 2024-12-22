@@ -1,0 +1,66 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to display the selected radio button value
+def show_radio_selection():
+    selection = radio_var.get()
+    messagebox.showinfo("Radio Button Selection", f"You selected: {selection}")
+
+# Function to display the selected checkboxes values
+def show_checkbox_selection():
+    selected_options = []
+    if checkbox_var1.get():
+        selected_options.append("Option 1")
+    if checkbox_var2.get():
+        selected_options.append("Option 2")
+    if checkbox_var3.get():
+        selected_options.append("Option 3")
+    
+    selected_text = ", ".join(selected_options)
+    messagebox.showinfo("Checkbox Selection", f"You selected: {selected_text}")
+
+# Create the main window
+root = tk.Tk()
+root.title("Radio Buttons and Checkboxes Example")
+root.geometry("400x300")
+
+# Create a label
+label = tk.Label(root, text="Select your preferences", font=("Arial", 14))
+label.pack(pady=20)
+
+# Create a variable for the radio button selection
+radio_var = tk.StringVar(value="Option A")  # Default value
+
+# Create radio buttons
+radio_button_a = tk.Radiobutton(root, text="Option A", variable=radio_var, value="Option A", font=("Arial", 12))
+radio_button_b = tk.Radiobutton(root, text="Option B", variable=radio_var, value="Option B", font=("Arial", 12))
+radio_button_c = tk.Radiobutton(root, text="Option C", variable=radio_var, value="Option C", font=("Arial", 12))
+
+radio_button_a.pack()
+radio_button_b.pack()
+radio_button_c.pack()
+
+# Create a button to show the radio button selection
+radio_button_show = tk.Button(root, text="Show Radio Selection", font=("Arial", 12), command=show_radio_selection)
+radio_button_show.pack(pady=10)
+
+# Create variables for the checkboxes
+checkbox_var1 = tk.BooleanVar()
+checkbox_var2 = tk.BooleanVar()
+checkbox_var3 = tk.BooleanVar()
+
+# Create checkboxes
+checkbox1 = tk.Checkbutton(root, text="Option 1", variable=checkbox_var1, font=("Arial", 12))
+checkbox2 = tk.Checkbutton(root, text="Option 2", variable=checkbox_var2, font=("Arial", 12))
+checkbox3 = tk.Checkbutton(root, text="Option 3", variable=checkbox_var3, font=("Arial", 12))
+
+checkbox1.pack()
+checkbox2.pack()
+checkbox3.pack()
+
+# Create a button to show the checkbox selection
+checkbox_button_show = tk.Button(root, text="Show Checkbox Selection", font=("Arial", 12), command=show_checkbox_selection)
+checkbox_button_show.pack(pady=10)
+
+# Start the main loop
+root.mainloop()

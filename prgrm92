@@ -1,0 +1,26 @@
+import tkinter as tk
+
+# Function to change the background color based on the selected color
+def change_color(selected_color):
+    root.config(bg=selected_color)
+
+# Create the main window
+root = tk.Tk()
+root.title("Color Selector")
+root.geometry("400x300")  # Set the window size
+
+# Create a label
+label = tk.Label(root, text="Select a background color", font=("Arial", 14))
+label.pack(pady=20)
+
+# Create a dropdown menu (OptionMenu) for color selection
+color_options = ["red", "green", "blue", "yellow", "pink", "orange", "white"]
+color_var = tk.StringVar(value=color_options[0])  # Default value is "red"
+
+# Create the OptionMenu widget
+color_menu = tk.OptionMenu(root, color_var, *color_options, command=change_color)
+color_menu.config(font=("Arial", 12))
+color_menu.pack(pady=20)
+
+# Start the main loop
+root.mainloop()

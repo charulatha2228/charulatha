@@ -1,0 +1,16 @@
+# Define the function to calculate the GCD using the Euclidean algorithm
+def gcd(a, b):
+    # Base case: if b is 0, return a as the GCD
+    if b == 0:
+        return a
+    # Recursive case: call gcd with b and the remainder of a divided by b
+    else:
+        return gcd(b, a % b)
+
+# Call the function with two numbers
+num1 = 56
+num2 = 98
+result = gcd(num1, num2)
+
+# Print the result
+print(f"The GCD of {num1} and {num2} is {result}")

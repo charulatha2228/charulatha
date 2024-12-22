@@ -1,0 +1,37 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to check login credentials
+def check_login():
+    username = entry_username.get()
+    password = entry_password.get()
+    
+    # Example credentials (you can change them or get them from a database)
+    if username == "admin" and password == "password123":
+        messagebox.showinfo("Login Successful", "Welcome, Admin!")
+    else:
+        messagebox.showerror("Login Failed", "Invalid username or password.")
+
+# Create the main window
+root = tk.Tk()
+root.title("Login Form")
+root.geometry("300x200")  # Set the window size
+
+# Create and place the username label and entry
+label_username = tk.Label(root, text="Username:", font=("Arial", 12))
+label_username.pack(pady=10)
+entry_username = tk.Entry(root, font=("Arial", 12))
+entry_username.pack(pady=5)
+
+# Create and place the password label and entry
+label_password = tk.Label(root, text="Password:", font=("Arial", 12))
+label_password.pack(pady=10)
+entry_password = tk.Entry(root, font=("Arial", 12), show="*")  # Use '*' to hide the password
+entry_password.pack(pady=5)
+
+# Create and place the login button
+login_button = tk.Button(root, text="Login", font=("Arial", 12), command=check_login)
+login_button.pack(pady=20)
+
+# Start the main loop
+root.mainloop()

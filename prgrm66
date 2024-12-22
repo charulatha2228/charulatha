@@ -1,0 +1,8 @@
+# Create a dictionary
+my_dict = {"b": 2, "a": 1, "d": 4, "c": 3}
+
+# Sort the dictionary by keys
+sorted_dict = dict(sorted(my_dict.items()))
+
+# Print the sorted dictionary
+print("Dictionary sorted by keys:", sorted_dict)

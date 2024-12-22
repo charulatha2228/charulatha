@@ -1,0 +1,27 @@
+# Create a dictionary
+my_dict = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
+
+# Print the initial dictionary
+print("Original dictionary:", my_dict)
+
+# Adding elements to the dictionary
+my_dict["profession"] = "Engineer"  # Add a new key-value pair
+my_dict["country"] = "USA"          # Add another key-value pair
+print("\nDictionary after adding elements:", my_dict)
+
+# Removing elements from the dictionary
+removed_value = my_dict.pop("age")  # Remove an element by key
+print("\nRemoved 'age':", removed_value)
+print("Dictionary after removing 'age':", my_dict)
+
+del my_dict["city"]                 # Remove another element by key
+print("\nDictionary after removing 'city':", my_dict)
+
+# Using popitem() to remove the last inserted item
+last_item = my_dict.popitem()
+print("\nRemoved the last item:", last_item)
+print("Dictionary after using popitem():", my_dict)

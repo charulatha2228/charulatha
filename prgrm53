@@ -1,0 +1,11 @@
+# Create a tuple
+my_tuple = (10, 20, 30, 20, 40, 50, 20)
+
+# Element to count occurrences of
+element_to_count = 20
+
+# Count occurrences of the element
+count = my_tuple.count(element_to_count)
+
+# Print the result
+print(f"The element {element_to_count} occurs {count} times in the tuple.")

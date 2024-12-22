@@ -1,0 +1,13 @@
+# Create a tuple
+my_tuple = (10, 20, 30, 40, 50)
+
+# Unpack the tuple into variables
+a, b, c, d, e = my_tuple
+
+# Print the variables
+print("Unpacked values:")
+print("a =", a)
+print("b =", b)
+print("c =", c)
+print("d =", d)
+print("e =", e)

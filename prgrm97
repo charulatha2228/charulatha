@@ -1,0 +1,54 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate an array of values for the x-axis (0 to 2π)
+x = np.linspace(0, 2 * np.pi, 1000)
+
+# Calculate the sine and cosine values for each x
+y_sine = np.sin(x)
+y_cosine = np.cos(x)
+
+# Create the plot
+plt.plot(x, y_sine, label='Sine Wave', color='blue')  # Plot sine wave
+plt.plot(x, y_cosine, label='Cosine Wave', color='red')  # Plot cosine wave
+
+# Add title and labels
+plt.title("Sine and Cosine Waves")
+plt.xlabel("X (radians)")
+plt.ylabel("Amplitude")
+
+# Display the legend
+plt.legend()
+
+# Show grid for better visibility
+plt.grid(True)
+
+# Display the plot
+plt.show()
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate an array of values for the x-axis (0 to 2π)
+x = np.linspace(0, 2 * np.pi, 1000)
+
+# Calculate the sine and cosine values for each x
+y_sine = np.sin(x)
+y_cosine = np.cos(x)
+
+# Create the plot
+plt.plot(x, y_sine, label='Sine Wave', color='blue')  # Plot sine wave
+plt.plot(x, y_cosine, label='Cosine Wave', color='red')  # Plot cosine wave
+
+# Add title and labels
+plt.title("Sine and Cosine Waves")
+plt.xlabel("X (radians)")
+plt.ylabel("Amplitude")
+
+# Display the legend
+plt.legend()
+
+# Show grid for better visibility
+plt.grid(True)
+
+# Display the plot
+plt.show()

@@ -1,0 +1,21 @@
+import numpy as np
+
+# Create two numpy arrays
+array1 = np.array([1, 2, 3, 4, 5])
+array2 = np.array([5, 4, 3, 2, 1])
+
+# Element-wise addition
+addition_result = np.add(array1, array2)
+
+# Element-wise subtraction
+subtraction_result = np.subtract(array1, array2)
+
+# Element-wise multiplication
+multiplication_result = np.multiply(array1, array2)
+
+# Print the results
+print("Array 1:", array1)
+print("Array 2:", array2)
+print("\nElement-wise addition:", addition_result)
+print("Element-wise subtraction:", subtraction_result)
+print("Element-wise multiplication:", multiplication_result)

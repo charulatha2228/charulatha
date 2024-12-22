@@ -1,0 +1,15 @@
+import numpy as np
+
+# Generate an array of 10 random numbers
+random_array = np.random.randint(1, 100, 10)
+
+# Calculate the mean, median, and standard deviation
+mean_value = np.mean(random_array)
+median_value = np.median(random_array)
+std_deviation = np.std(random_array)
+
+# Print the results
+print("Generated Array:", random_array)
+print(f"Mean: {mean_value}")
+print(f"Median: {median_value}")
+print(f"Standard Deviation: {std_deviation}")

@@ -1,0 +1,9 @@
+# Create two dictionaries
+dict1 = {"name": "Alice", "age": 25}
+dict2 = {"city": "New York", "profession": "Engineer"}
+
+# Merge dictionaries using update()
+dict1.update(dict2)
+
+# Print the merged dictionary
+print("Merged dictionary using update():", dict1)

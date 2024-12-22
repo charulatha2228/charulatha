@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+# Data: Sales over 5 years (in millions)
+years = [2019, 2020, 2021, 2022, 2023]
+sales = [120, 150, 170, 200, 250]
+
+# Create a bar chart
+plt.bar(years, sales, color='blue')
+
+# Add title and labels
+plt.title("Company Sales Over 5 Years")
+plt.xlabel("Year")
+plt.ylabel("Sales (in millions)")
+
+# Display the bar chart
+plt.show()

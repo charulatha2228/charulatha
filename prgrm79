@@ -1,0 +1,22 @@
+# Define the function to convert vowels in a string
+def convert_vowels(input_string):
+    vowels = "aeiouAEIOU"
+    result = ""
+    
+    # Iterate through the string and replace vowels with '*'
+    for char in input_string:
+        if char in vowels:
+            result += "*"  # Replace vowel with '*'
+        else:
+            result += char  # Keep the non-vowel character as is
+    
+    return result
+
+# Call the function with a string
+input_string = "Hello World"
+output_string = convert_vowels(input_string)
+
+# Print the result
+print(f"Original string: {input_string}")
+print(f"String after converting vowels: {output_string}")
+
