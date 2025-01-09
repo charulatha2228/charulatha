@@ -1,16 +1,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Data: Test scores of students
+
 test_scores = [85, 90, 78, 92, 88, 76, 95, 89, 84, 77, 80, 91, 72, 85, 86, 87, 93, 90, 82, 78]
 
-# Create the histogram
+
 plt.hist(test_scores, bins=10, color='blue', edgecolor='black')
 
-# Add title and labels
 plt.title("Distribution of Test Scores")
 plt.xlabel("Test Scores")
 plt.ylabel("Number of Students")
 
-# Display the histogram
+
 plt.show()
